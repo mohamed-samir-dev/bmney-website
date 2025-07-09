@@ -801,3 +801,181 @@ html {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Financial Control Section */
+.financial-control-section {
+    padding: 6rem 0;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Container */
+.financial-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Image Section */
+.financial-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.financial-image::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+}
+
+
+.financial-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* Content Section */
+.financial-content {
+    animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.financial-content h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    background-clip: text;
+    position: relative;
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+
+
+.financial-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    font-weight: 300;
+    animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+/* Feature Items */
+.feature-item2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+.feature-item2 i {
+    color: #586bc0;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+
+.feature-item2:hover i {
+    transform: scale(1.1);
+}
+
+.feature-item2 h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Get Started Button */
+
+.get-started-btn {
+background-color: #6f04b6;
+    color: #fff;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+    animation: fadeInUp 1s ease-out 1s both;
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
