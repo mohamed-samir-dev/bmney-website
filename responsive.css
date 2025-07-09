@@ -495,6 +495,39 @@
     .main-image {
         border-radius: 20px;
     }
+
+    /* subscribe section Media Queries */
+
+    .subscribe-section {
+        padding: 80px 0;
+    }
+
+    .subscribe-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .subscribe-content h2 {
+        font-size: 2rem;
+    }
+
+    .subscribe-features {
+        align-items: center;
+    }
+
+    .input-group {
+        gap: 15px;
+    }
+
+    .subscriber-stats {
+        padding: 20px;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
 }
 
 /* Mobile Large (481px to 575px) */
@@ -855,6 +888,41 @@
     .main-image {
         border-radius: 16px;
     }
+
+    /* Media Queries for Subscribe Section */
+    .subscribe-section {
+        padding: 60px 0;
+    }
+
+    .subscribe-wrapper {
+        padding: 25px;
+    }
+
+    .subscribe-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .feature-point {
+        justify-content: center;
+    }
+
+    .feature-point span {
+        font-size: 0.9rem;
+    }
+
+    .email-input {
+        padding: 14px 16px 14px 40px;
+        font-size: 0.95rem;
+    }
+
+    .btn-subscribe {
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
+
+    .privacy-notice {
+        font-size: 0.8rem;
+    }
 }
 
 /* Mobile Extra Small (below 320px) */
@@ -990,7 +1058,7 @@
 }
 
 
-/* Media Queries for Growth Tracking Section */
+
 
 @media (max-width: 1024px) {
     .growth-tracking-section {
@@ -1045,6 +1113,16 @@
 
     .jul {
         height: 80px;
+    }
+
+    /* subscribe section */
+    .subscribe-wrapper {
+        padding: 50px;
+        gap: 50px;
+    }
+
+    .subscribe-content h2 {
+        font-size: 2.2rem;
     }
 }
 
@@ -1124,5 +1202,54 @@
 
     .jul {
         height: 55px;
+    }
+
+    /* subscribe section */
+
+    .subscribe-container {
+        padding: 0 15px;
+    }
+
+    .subscribe-wrapper {
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .subscribe-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .subscribe-content p {
+        font-size: 1rem;
+    }
+
+    .subscribe-icon {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 25px;
+    }
+
+    .subscribe-icon i {
+        font-size: 1.5rem;
+    }
+
+    .email-input {
+        padding: 16px 18px 16px 45px;
+    }
+
+    .btn-subscribe {
+        padding: 16px 25px;
+        font-size: 1rem;
+    }
+
+    .subscriber-stats {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    .stat-divider {
+        width: 60px;
+        height: 1px;
     }
 }
