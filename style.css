@@ -540,3 +540,264 @@ html {
 
 
 
+
+
+
+/* Brands Section */
+.brands-section {
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 80px;
+        opacity: 1;
+    }
+}
+
+/* Brands Container */
+.brands {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    animation: moveRight 25s linear infinite;
+    white-space: nowrap;
+
+}
+
+.brands:hover {
+    animation-play-state: paused;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+.brands-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.highlight-number {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    position: relative;
+}
+
+
+.brand-name {
+    color: #667eea;
+    font-weight: 800;
+    position: relative;
+}
+
+
+
+/* Alternative: Continuous Loop Animation */
+.brands-loop {
+    display: flex;
+    align-items: center;
+    animation: continuousRight 30s linear infinite;
+    width: fit-content;
+}
+
+@keyframes continuousRight {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Brand Items */
+.brand {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    animation:
+        slideInRight 1s ease-out both,
+        float 4s ease-in-out infinite;
+}
+
+/* Staggered Entry Animation */
+.brand:nth-child(1) {
+    animation: slideInRight 1s ease-out 0.1s both;
+}
+
+.brand:nth-child(2) {
+    animation: slideInRight 1s ease-out 0.2s both;
+}
+
+.brand:nth-child(3) {
+    animation: slideInRight 1s ease-out 0.3s both;
+}
+
+.brand:nth-child(4) {
+    animation: slideInRight 1s ease-out 0.4s both;
+}
+
+.brand:nth-child(5) {
+    animation: slideInRight 1s ease-out 0.5s both;
+}
+
+.brand:nth-child(6) {
+    animation: slideInRight 1s ease-out 0.6s both;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.brand:nth-child(odd) {
+    animation-delay: 0s, 2s;
+}
+
+.brand:nth-child(even) {
+    animation-delay: 0.3s, 4s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+
+
+
+/* Brand Images */
+.brand img {
+    max-width: 130px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    animation: imagePulse 3s ease-in-out infinite;
+    object-fit: contain;
+}
+
+.brand:nth-child(1) img {
+    animation-delay: 0s;
+}
+
+.brand:nth-child(2) img {
+    animation-delay: 0.5s;
+}
+
+.brand:nth-child(3) img {
+    animation-delay: 1s;
+}
+
+.brand:nth-child(4) img {
+    animation-delay: 1.5s;
+}
+
+.brand:nth-child(5) img {
+    animation-delay: 2s;
+}
+
+.brand:nth-child(6) img {
+    animation-delay: 2.5s;
+}
+
+@keyframes imagePulse {
+
+    0%,
+    100% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
+
+
+
+.brands-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+/* Seamless Right Movement */
+.brands-loop {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    animation: seamlessRight 35s linear infinite;
+    width: max-content;
+}
+
+.brands-loop:hover {
+    animation-play-state: paused;
+}
+
+@keyframes seamlessRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
+
