@@ -4,11 +4,11 @@ Bmney is a modern and responsive financial website that offers a sleek user expe
 
 ## 🚀 Live Demo
 
-[🔗 Visit the Website](https://your-live-link-here.com)
+[🔗 Visit the Website](https://bmney-website-smh9.vercel.app/)
 
 ## 📸 Screenshots
 
-![Bmney Screenshot].(images/screencapture-127-0-0-1-5500-index-html-2025-07-08-02_08_00.png)
+![Bmney Screenshot](images/screencapture-127-0-0-1-5500-index-html-2025-07-08-02_08_00.png)
 
 ## 📌 Features
 
