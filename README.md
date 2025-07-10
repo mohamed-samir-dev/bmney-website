@@ -8,7 +8,7 @@ Bmney is a modern and responsive financial website that offers a sleek user expe
 
 ## 📸 Screenshots
 
-![Bmney Screenshot](images/screencapture-127-0-0-1-5500-index-html-2025-07-10-21_19_46.png)
+![Bmney Screenshot].(images/screencapture-127-0-0-1-5500-index-html-2025-07-08-02_08_00.png)
 
 ## 📌 Features
 
